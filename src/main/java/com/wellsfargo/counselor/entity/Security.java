@@ -16,19 +16,19 @@ public class Security {
     @JoinColumn(referencedColumnName = "clientId")
     private Portfolio portfolio;
 
-    @Column
+    @Column (nullable = false)
     private String name;
 
-    @Column
+    @Column (nullable = false)
     private String category;
 
-    @Column
+    @Column (nullable = false)
     private double purchasePrice;
 
-    @Column
+    @Column (nullable = false)
     private LocalDate purchaseDate;
 
-    @Column
+    @Column (nullable = false)
     private int quantity;
 
     protected Security(){}

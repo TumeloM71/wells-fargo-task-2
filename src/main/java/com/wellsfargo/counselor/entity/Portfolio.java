@@ -16,7 +16,7 @@ public class Portfolio {
     @JoinColumn(referencedColumnName = "clientId")
     private Client client;
 
-    @Column
+    @Column (nullable = false)
     private LocalDate creationDate;
 
     protected Portfolio(){}
